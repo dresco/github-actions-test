@@ -1,4 +1,4 @@
-name: PlatformIO CI
+name: PlatformIO build
 
 on: [push]
 
@@ -30,3 +30,4 @@ jobs:
           path: |
             .pio/build/**/*.bin
             .pio/build/**/*.hex
+            .pio/build/**/*.elf
