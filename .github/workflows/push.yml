@@ -26,7 +26,7 @@ jobs:
       - name: Archive firmware artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: firmware
+          name: firmware-${{ github.sha }}
           path: |
             .pio/build/**/*.bin
             .pio/build/**/*.hex
